@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+    <style>
+        body{
+            align-content: center;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border: 1px solid;
+
+        }
+        td{
+            text-align: center;
+            border: 1px solid;
+            color: blue;
+        }
+        input{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th colspan="4">
+                    <label>
+                        <input type="text" id="nhaplieu" readonly>
+                    </label>
+
+                </th>
+            </tr>
+            <tr>
+                <td><button class="input" value="1" type="button">1</button></td>
+                <td><button class="input" value="2" type="button">2</button></td>
+                <td><button class="input" value="3" type="button">3</button></td>
+                <td><button class="input" value="+" type="button"
+                onclick="InputHandler(this.value)">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="input" value="4" type="button">4</button></td>
+                <td><button class="input" value="5" type="button">5</button></td>
+                <td><button class="input" value="6" type="button">6</button></td>
+                <td><button class="input" value="-" type="button">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="input" value="7" type="button">7</button></td>
+                <td><button class="input" value="8" type="button">8</button></td>
+                <td><button class="input" value="9" type="button">9</button></td>
+                <td><button class="input" value="*" type="button">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="deleteAll()">C</button></td>
+                <td><button class="input" value="0" type="button">0</button></td>
+                <td><button id="calculate" value="=" type="button">=</button></td>
+                <td><button class="input" value="/" type="button">/</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script src="maytinh.js"></script>
